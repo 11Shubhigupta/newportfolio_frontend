@@ -30,14 +30,14 @@ export default function Certifications() {
             }}
             className="border p-6 bg-gray-900 dark:bg-black rounded-xl transition-all"
           >
-            <h3 className="text-xl font-semibold">{c.title}</h3>
+            <h3 className="text-xl font-semibold">{c.name}</h3>
 
             <p className="mt-2 text-gray-300 dark:text-gray-400">
-              {c.organization}
+              {c.issuer}
             </p>
 
             <p className="mt-2 text-sm text-blue-400 dark:text-blue-300">
-              {c.date}
+              {c.year}
             </p>
           </motion.div>
         ))}
