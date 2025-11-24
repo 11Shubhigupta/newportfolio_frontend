@@ -13,8 +13,10 @@ export default function Certifications() {
   }, []);
 
   return (
-    <div id="certifications" className="px-8 py-20">
-      <h2 className="text-4xl font-bold">Certifications</h2>
+    <div id="certifications" className="px-8 py-20 bg-white dark:bg-black">
+      <h2 className="text-4xl font-bold text-black dark:text-white">
+        Certifications
+      </h2>
 
       <div className="grid md:grid-cols-2 gap-6 mt-8">
         {certs.map((c, index) => (
@@ -28,15 +30,17 @@ export default function Certifications() {
               scale: 1.03,
               boxShadow: "0px 8px 20px rgba(0,0,0,0.35)",
             }}
-            className="border p-6 bg-gray-900 dark:bg-black rounded-xl transition-all"
+            className="border p-6 bg-gray-100 dark:bg-gray-900 rounded-xl transition-all"
           >
-            <h3 className="text-xl font-semibold">{c.name}</h3>
+            <h3 className="text-xl font-semibold text-black dark:text-white">
+              {c.name}
+            </h3>
 
-            <p className="mt-2 text-gray-300 dark:text-gray-400">
+            <p className="mt-2 text-gray-700 dark:text-gray-400">
               {c.issuer}
             </p>
 
-            <p className="mt-2 text-sm text-blue-400 dark:text-blue-300">
+            <p className="mt-2 text-sm text-blue-600 dark:text-blue-300">
               {c.year}
             </p>
           </motion.div>
