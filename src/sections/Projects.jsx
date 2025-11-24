@@ -6,9 +6,10 @@ export default function Projects() {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-    axios.get("https://newportfolio-backend.vercel.app")
-
-      .then(res => setProjects(res.data));
+    axios
+      .get("https://newportfolio-backend.vercel.app/api/projects")
+      .then((res) => setProjects(res.data))
+      .catch((err) => console.error("API Error:", err));
   }, []);
 
   return (
@@ -23,7 +24,10 @@ export default function Projects() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: index * 0.15, duration: 0.5 }}
-            whileHover={{ scale: 1.03, boxShadow: "0px 8px 20px rgba(0,0,0,0.35)" }}
+            whileHover={{
+              scale: 1.03,
+              boxShadow: "0px 8px 20px rgba(0,0,0,0.35)",
+            }}
             className="border p-6 bg-gray-900 dark:bg-black rounded-xl transition-all"
           >
             <h3 className="text-2xl font-semibold">{p.title}</h3>
