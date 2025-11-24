@@ -6,6 +6,8 @@ import HireMe from "./sections/HireMe";
 import ChatBot from "./chatbot/ChatBot";
 import { useTheme } from "./ThemeContext";
 import { motion } from "framer-motion";
+import Certifications from "./sections/Certifications";
+
 
 export default function App() {
   const { theme, setTheme } = useTheme();
@@ -35,7 +37,8 @@ export default function App() {
       <About />
       <Skills />
       <Projects />
-      <HireMe />
+      <Certifications />
+     <HireMe />
       <ChatBot />
     </div>
   );
