@@ -64,7 +64,7 @@ Shubhi's Genuine Skills:
 - Database: MongoDB
 - UI/UX: Figma, responsive design
 - Tools: Git, GitHub, REST APIs
-- 3D/Graphics: Three.js (Solar System project)
+
 
 Shubhi's Real Projects:
 - 3D Solar System Simulation (Three.js)
